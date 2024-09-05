@@ -53,9 +53,11 @@ extra:
 # [Navigtion] 导航栏  在这里添加新文件的索引
 nav:
   - 欢迎！: index.md
-  - 校园 : chapterGuide/campus.md
+  - 校园 : 
+    - chapterGuide/campus.md
     - hpu撸猫指南: hpu撸猫指南/intro.md
-  - 工具: chapterGuide/tool.md
+  - 工具: 
+    - chapterGuide/tool.md
     - 必备工具:
       - 马猴？！: essentialTools/intro.md
     - 编辑器推荐: 
