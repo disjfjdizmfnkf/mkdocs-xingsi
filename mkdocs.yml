@@ -54,16 +54,16 @@ extra:
 nav:
   - 欢迎！: index.md
   - 校园 : 
-    - hpu撸猫指南: hpu撸猫指南\intro.md
+    - hpu撸猫指南: hpu撸猫指南/intro.md
   - 工具:
     - 必备工具:  
-      - 嗯: essentialTools\intro.md
+      - 嗯: essentialTools/intro.md
     - 编辑器推荐: 
-      - intro: editorRecommend\intro.md
-      - jetBrains: editorRecommend\jet.md
-      - visualStudioCode: editorRecommend\vsc.md
-      - nvim: editorRecommend\nvim.md
-  - 您如何编辑？: howToEdit\howToEdit.md
+      - intro: editorRecommend/intro.md
+      - jetBrains: editorRecommend/jet.md
+      - visualStudioCode: editorRecommend/vsc.md
+      - nvim: editorRecommend/nvim.md
+  - 您如何编辑？: howToEdit/howToEdit.md
 # [Extensions] 扩展
 plugins:
   - search:
