@@ -54,10 +54,10 @@ extra:
 nav:
   - 欢迎！: index.md
   - 校园 : 
-    - chapterGuide/campus.md
+    - 🌐: chapterGuide/campus.md
     - hpu撸猫指南: hpu撸猫指南/intro.md
   - 工具: 
-    - chapterGuide/tool.md
+    - 🌐: chapterGuide/tool.md
     - 必备工具:
       - 马猴？！: essentialTools/intro.md
     - 编辑器推荐: 
