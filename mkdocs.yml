@@ -55,7 +55,7 @@ nav:
   - 欢迎！: index.md
   - 校园 : 
     - 🌐: chapterGuide/campus.md
-    - hpu撸猫指南: hpu撸猫指南/intro.md
+    - hpu撸猫指南: campus/hpu撸猫指南.md
   - 工具: 
     - 🌐: chapterGuide/tool.md
     - 必备工具:
@@ -87,7 +87,7 @@ plugins:
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
       generic: true
-  - attr_list # 给图片后面添加{width="300"}设置大小
+  - attr_list # 允许添加属性列表，例如:给图片后面添加{width="300"}设置大小
   - md_in_html
   - tables
   - toc:
