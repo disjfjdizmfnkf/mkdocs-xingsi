@@ -14,7 +14,7 @@
 
 1. 点击项目地址, fork这个项目
 
-![1](../assets/howToEdit/image.png)
+![1](../assets/howToEdit/image.png){loading=lazy}
 <center>fork</center>
 
 &emsp;&emsp;之后你就会看到你的仓库中也有这个项目了
@@ -24,11 +24,11 @@
 > 啰嗦一下
 
 &emsp;&emsp;记得要进入自己的仓库中，不要克隆
-![2](../assets/howToEdit/image1.png)
+![2](../assets/howToEdit/image1.png){loading=lazy}
 <center>进入自己的仓库</center>
 
 &emsp;&emsp;使用一种方式clone就行了
-![3](../assets/howToEdit/image2.png)
+![3](../assets/howToEdit/image2.png){loading=lazy}
 <center>clone</center>
 
 

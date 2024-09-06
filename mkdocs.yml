@@ -1,6 +1,6 @@
 # [Info] 基本信息
 site_name: Xingsi_hub # 左上角标题
-site_url: https://47.121.180.50/Xingsi_Hub
+site_url: https://Xingsi_Hub
 site_author: 0xDtc
 site_description: 行思工作室
 
@@ -40,7 +40,7 @@ edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/disjfjdizmfnkf/mkdocs-xinsi # 右上角点击跳转的链接
 repo_name: mkdocs-xinsi # 右上角的名字
 ## [bottom-left corner]
-copyright: Copyright &copy; 2023 0xDtc # 左下角的版权声明
+copyright: Copyright &copy; 2024 0xDtc # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   social: # icons
@@ -56,6 +56,16 @@ nav:
   - 校园 : 
     - 🌐: chapterGuide/campus.md
     - hpu撸猫指南: campus/hpu撸猫指南.md
+  - 社团 :
+    - 🌐: chapterGuide/studio.md
+    - 设计 : c-xingsi/design.md
+    - 文案 : c-xingsi/copywriting.md
+    - 全栈 : c-xingsi/fullstack.md
+    - 游戏 : c-xingsi/game.md
+    - 财务 : c-xingsi/finance.md
+    - 前端 : c-xingsi/frontend.md
+    - 后端 : c-xingsi/backend.md
+    - python : c-xingsi/python.md
   - 工具: 
     - 🌐: chapterGuide/tool.md
     - 必备工具:
