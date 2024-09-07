@@ -56,6 +56,7 @@ nav:
   - 校园 : 
     - 🌐: chapterGuide/campus.md
     - hpu撸猫指南: campus/hpu撸猫指南.md
+    - 校园网dns解析: campus/校园网dns解析.md
   - 社团 :
     - 🌐: chapterGuide/studio.md
     - 设计 : c-xingsi/design.md
