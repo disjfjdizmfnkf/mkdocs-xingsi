@@ -23,7 +23,7 @@
 
 > 啰嗦一下
 
-&emsp;&emsp;记得要进入自己的仓库中，不要克隆
+&emsp;&emsp;记得要进入自己的仓库中克隆，不要克隆原始仓库
 ![2](../assets/howToEdit/image1.png){loading=lazy}
 <center>进入自己的仓库</center>
 

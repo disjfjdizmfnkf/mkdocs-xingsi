@@ -22,7 +22,7 @@
 
 这里简单介绍一下四个功能部件:
 
-1. [LSP](https://blog.csdn.net/u012930117/article/details/79291677#:~:text=Language%20S)
+#### 1. [LSP](https://blog.csdn.net/u012930117/article/details/79291677#:~:text=Language%20S)
 
 > ~~(Lao ** ** )~~ ( **Language Server Protocol**)
 
@@ -33,7 +33,7 @@
 
 ---
 
-2. [DAP](https://www.jianshu.com/p/da7336676cda)
+#### 2. [DAP](https://www.jianshu.com/p/da7336676cda)
 
 > (**Debug Adapter Protocol**),DAP 是一种协议，用于在编辑器和调试器之间进行通信。
 
@@ -41,7 +41,7 @@
 
 ---
 
-3. [Linter](https://www.zhihu.com/question/28421865) 
+#### 3. [Linter](https://www.zhihu.com/question/28421865) 
 
 - 检测语法错误
 - 确保代码符合特定的编码规范
@@ -50,7 +50,7 @@
 
 ---
 
-4. Formatter
+#### 4. Formatter
 
 >  &emsp;&emsp;不同语言的编写时的语法不同,它们编写时遵循的格式也不同
 
