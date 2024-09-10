@@ -27,6 +27,6 @@ yum add
 ```
 
 nvim有很强的可拓展性，你完全可以按照你的个人习惯配置你的nvim
-但是对我这种初学者，nvim并不是很友好，我曾经浪费半天时间也只是简单完成了 packer telescope mason nvim-tree这些必备插件，直到我后来知道了[**lazyVim**](https://www.lazyvim.org/|200)...
+但是对于大部分初学者，nvim并不是很友好，我曾经浪费半天时间也只是简单完成了 packer telescope mason nvim-tree这些必备插件，直到我后来知道了[**lazyVim**](https://www.lazyvim.org/|200)...
 
 我当然推荐大家直接用lazyvim上手，链接就在上面，文档也很详细，之后凭借兴趣再决定是否深入吧
