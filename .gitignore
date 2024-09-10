@@ -40,3 +40,6 @@ nbdist/
 # Emacs
 *~
 \#*\#
+
+# 其它
+requirements.in
