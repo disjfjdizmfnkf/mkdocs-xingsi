@@ -8,11 +8,11 @@
 
  - **界面简洁，可视效果好**
 
-<img src= '/assets/recommendTools/SpaceSniffer/开始界面.png' >
+
+<img src='../assets/recommendTools/SpaceSniffer/开始界面.png'>
 
 
-
-<img src='/assets/recommendTools/SpaceSniffer/磁盘分析后界面.png'>
+<img src='../assets/recommendTools/SpaceSniffer/磁盘分析后界面.png'>
 
 
  - **操作简单易上手**
@@ -21,7 +21,7 @@
     
     &emsp;&emsp;对想要查看或是删除的文件或文件夹右键即可显示对应操作，双击文件夹标题便可缩放视图到全部，再次双击便可退回到上个视图。
 
-<img src='/assets/recommendTools/SpaceSniffer/右键菜单.png'>
+<img src='../assets/recommendTools/SpaceSniffer/右键菜单.png'>
 
 
  - **即时更新文件改动**
