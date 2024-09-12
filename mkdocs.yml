@@ -37,15 +37,15 @@ theme:
     repo: fontawesome/brands/github-alt
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
-repo_url: https://github.com/disjfjdizmfnkf/mkdocs-xinsi # 右上角点击跳转的链接
-repo_name: mkdocs-xinsi # 右上角的名字
+repo_url: https://github.com/disjfjdizmfnkf/mkdocs-xingsi # 右上角点击跳转的链接
+repo_name: mkdocs-xingsi # 右上角的名字
 ## [bottom-left corner]
 copyright: Copyright &copy; 2024 0xDtc # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   social: # icons
     - icon: fontawesome/brands/github
-      link: https://github.com/disjfjdizmfnkf/mkdocs-xinsi
+      link: https://github.com/disjfjdizmfnkf
       name: GitHub | disjfjdizmfnkf # 鼠标悬浮提示
     - icon: fontawesome/brands/qq
       link: https://qm.qq.com/q/xaolYlwWu6
