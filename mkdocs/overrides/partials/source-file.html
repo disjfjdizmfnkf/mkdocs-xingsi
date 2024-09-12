@@ -1,0 +1,26 @@
+{% import "partials/language.html" as lang with context %}
+
+<hr />
+<div class="md-source-file">
+  <small>
+    {% set updated_date = page.meta.git_revision_date_localized or page.meta.revision_date %}
+    {% set created_date = page.meta.git_creation_date_localized %}
+    
+    <!-- 显示更新日期 -->
+    {% if updated_date %}
+      {{ lang.t("source.file.date.updated") }}: {{ updated_date }}
+    {% endif %}
+
+    <!-- 显示创建日期 -->
+    {% if created_date %}
+      <br />
+      {{ lang.t("source.file.date.created") }}: {{ created_date }}
+    {% endif %}
+
+    <!-- 显示作者信息 -->
+    {% if git_page_authors %}
+      <br />
+      作者: {{ git_page_authors | default('启用 mkdocs-git-authors-plugin') }}
+    {% endif %}
+  </small>
+</div>
