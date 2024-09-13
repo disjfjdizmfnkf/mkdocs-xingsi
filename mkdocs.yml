@@ -50,33 +50,7 @@ extra:
     - icon: fontawesome/brands/qq
       link: https://qm.qq.com/q/xaolYlwWu6
       name: 行思qq群
-# [Navigtion] 导航栏  在这里添加新文件的索引
-nav:
-  - 欢迎！: index.md
-  - 校园 : 
-    - 🌐: chapterGuide/campus.md
-    - hpu撸猫指南: campus/hpu撸猫指南.md
-    - 校园网dns解析: campus/校园网dns解析.md
-  - 社团 :
-    - 🌐: chapterGuide/studio.md
-    - 设计 : c-xingsi/design.md
-    - 文案 : c-xingsi/copywriting.md
-    - 全栈 : c-xingsi/fullstack.md
-    - 游戏 : c-xingsi/game.md
-    - 财务 : c-xingsi/finance.md
-    - 前端 : c-xingsi/frontend.md
-    - 后端 : c-xingsi/backend.md
-    - python : c-xingsi/python.md
-  - 工具: 
-    - 🌐: chapterGuide/tool.md
-    - 必备工具:
-      - 马猴？！: essentialTools/intro.md
-    - 编辑器推荐: 
-      - intro: editorRecommend/intro.md
-      - jetBrains: editorRecommend/jet.md
-      - visualStudioCode: editorRecommend/vsc.md
-      - nvim: editorRecommend/nvim.md
-  - 您如何编辑？: howToEdit/howToEdit.md
+
 # [Extensions] 扩展
 plugins:
   - search:
@@ -123,3 +97,36 @@ extra_javascript:
 extra_css:
   - mkdocs/css/unordered-list-symbols.css # 多个无序列表符号
   - mkdocs/css/img-center.css # 图像居中
+
+# [Navigtion] 导航栏  在这里添加新文件的索引
+nav:
+  - 欢迎！: index.md
+  - 校园 : 
+    - 🌐: chapterGuide/campus.md
+    - hpu撸猫指南: campus/hpu撸猫指南.md
+    - 校园网dns解析: campus/校园网dns解析.md
+  - 社团 :
+    - 🌐: chapterGuide/studio.md
+    - 设计 : c-xingsi/design/design.md
+    - 文案 : c-xingsi/copywriting/copywriting.md
+    - 全栈 : c-xingsi/fullstack/fullstack.md
+    - 游戏 : 
+      - 总览: c-xingsi/game/game_total.md
+      - Unity引擎: c-xingsi/game/game_Unity/game_Unity_total.md
+      - 语言: c-xingsi/game/game_CodeLanguage/game_CodeLanguage.md
+      - 会议总览: c-xingsi/game/game_meeting.md
+    
+    - 财务 : c-xingsi/finance/finance.md
+    - 前端 : c-xingsi/frontend/frontend.md
+    - 后端 : c-xingsi/backend/backend.md
+    - python : c-xingsi/python/python.md
+  - 工具: 
+    - 🌐: chapterGuide/tool.md
+    - 必备工具:
+      - 马猴？！: essentialTools/intro.md
+    - 编辑器推荐: 
+      - intro: editorRecommend/intro.md
+      - jetBrains: editorRecommend/jet.md
+      - visualStudioCode: editorRecommend/vsc.md
+      - nvim: editorRecommend/nvim.md
+  - 您如何编辑？: howToEdit/howToEdit.md
