@@ -1,0 +1,7 @@
+# 不指定版本号时默认安装最新版本
+mkdocs-material
+jinja2
+mkdocs-glightbox
+mkdocs-git-revision-date-localized-plugin
+mkdocs-git-authors-plugin
+mkdocs-meta-manager

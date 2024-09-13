@@ -6,7 +6,8 @@ comments: false
 
 ---
 
-![HPUjiang](../assets/campus/HPUjiang.png){ loading=lazy; with="100";}
+
+<img src="../../assets/campus/HPUjiang.png" width="350">
 
 <center> 室友大一时候跑的 </center>
 
