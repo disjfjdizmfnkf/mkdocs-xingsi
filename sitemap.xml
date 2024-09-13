@@ -2,86 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://Xingsi_Hub/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/backend/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/backend/backend/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/copywriting/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/copywriting/copywriting/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/design/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/design/design/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/finance/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/finance/finance/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/frontend/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/frontend/frontend/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/fullstack/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/fullstack/fullstack/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/game/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/game/game_meeting/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
-         <loc>https://Xingsi_Hub/c-xingsi/python/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <loc>https://Xingsi_Hub/c-xingsi/game/game_total/</loc>
+         <lastmod>2024-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://Xingsi_Hub/c-xingsi/game/game_CodeLanguage/game_CodeLanguage/</loc>
+         <lastmod>2024-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://Xingsi_Hub/c-xingsi/game/game_Unity/game_Unity_total/</loc>
+         <lastmod>2024-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://Xingsi_Hub/c-xingsi/game/game_meetings/2024-9_Timelne/</loc>
+         <lastmod>2024-09-13</lastmod>
+    </url>
+    <url>
+         <loc>https://Xingsi_Hub/c-xingsi/python/python/</loc>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/campus/hpu%E6%92%B8%E7%8C%AB%E6%8C%87%E5%8D%97/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/campus/%E6%A0%A1%E5%9B%AD%E7%BD%91dns%E8%A7%A3%E6%9E%90/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/chapterGuide/campus/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/chapterGuide/studio/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/chapterGuide/tool/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/editorRecommend/intro/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/editorRecommend/jet/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/editorRecommend/nvim/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/editorRecommend/vsc/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/essentialTools/intro/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/howToEdit/howToEdit/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
     <url>
          <loc>https://Xingsi_Hub/recommendTools/SpaceSniffer/</loc>
-         <lastmod>2024-09-12</lastmod>
+         <lastmod>2024-09-13</lastmod>
     </url>
 </urlset>
