@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -720,6 +725,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1226,6 +1233,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1244,24 +1253,18 @@
   
 
 
-  <h1>总览</h1>
-
-<p># 这里是游戏组内容总览</p>
-<hr />
-<table data-view="cards">
-    <thead>
-    <tr>
-            <td><strong>1、</strong></td>
-            <td><a href="game_CodeLanguage/game_CodeLanguage">编程语言</a></td>
-    </tr>
-    <tr>
-            <td><strong>2、</strong></td>
-            <td><a href="game_Unity/game_Unity_total">Unity引擎知识</a></td>
-    </tr>
-    <tr>
-            <td><strong>3、</strong></td>
-            <td><a href="game_meeting">开会内容</a></td>
-    </tr>
+<h1 id="_1">这里是游戏组内容总览<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><a href="../game_CodeLanguage/game_CodeLanguage/">编程语言</a></p>
+</li>
+<li>
+<p><a href="../game_Unity/game_Unity_total/">Unity引擎知识</a></p>
+</li>
+<li>
+<p><a href="../game_meeting/">开会内容</a></p>
+</li>
+</ul>
 
 
 <hr />
@@ -1272,7 +1275,7 @@
     
     <!-- 显示更新日期 -->
     
-      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-09-14T00:43:52+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-14</span>
+      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-09-14T22:45:11+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-14</span>
     
 
     <!-- 显示创建日期 -->
@@ -1291,56 +1294,6 @@
 
 
 
-
-<!-- Insert Giscus generated snippet here -->
-<!-- 插入 Giscus 生成的代码块 参考https://giscus.app/zh-CN -->
-<script src="https://giscus.app/client.js"
-        data-repo="disjfjdizmfnkf/mkdocs-xingsi"
-        data-repo-id="R_kgDOMtD1nA"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOMtD1nM4CiZgm"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<!-- 下面保持不动即可 -->
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate" ? "dark" : "light"
-        giscus.setAttribute("data-theme", theme)
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function () {
-        var ref = document.querySelector("[data-md-component=palette]")
-        ref.addEventListener("change", function () {
-            var palette = __md_get("__palette")
-            if (palette && typeof palette.color === "object") {
-                var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-                /* Instruct Giscus to change theme */
-                var frame = document.querySelector(".giscus-frame")
-                frame.contentWindow.postMessage(
-                    { giscus: { setConfig: { theme } } },
-                    "https://giscus.app"
-                )
-            }
-        })
-    })
-</script>
 
                 
 
