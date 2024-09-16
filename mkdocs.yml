@@ -123,6 +123,8 @@ nav:
     - 🌐: chapterGuide/tool.md
     - 必备工具:
       - 马猴？！: essentialTools/intro.md
+    - 推荐工具 : 
+      - 磁盘内容可视化工具——SpaceSniffer : recommendTools/SpaceSniffer.md
     - 编辑器推荐: 
       - intro: editorRecommend/intro.md
       - jetBrains: editorRecommend/jet.md
