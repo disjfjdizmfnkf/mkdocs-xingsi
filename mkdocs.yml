@@ -102,11 +102,12 @@ extra_css:
 nav:
   - 欢迎！: index.md
   - 校园 : 
-    - 🌐: chapterGuide/campus.md
+    - 引导📖: chapterGuide/campus.md
     - hpu撸猫指南: campus/hpu撸猫指南.md
-    - 校园网dns解析: campus/校园网dns解析.md
+    - 教育网DNS问题 : campus/校园网dns解析.md
+    - 注册邮箱&学生认证 : campus/学生认证.md
   - 社团 :
-    - 🌐: chapterGuide/studio.md
+    - 引导📖: chapterGuide/studio.md
     - 设计 : c-xingsi/design/design.md
     - 文案 : c-xingsi/copywriting/copywriting.md
     - 全栈 : c-xingsi/fullstack/fullstack.md
@@ -120,15 +121,19 @@ nav:
     - 后端 : c-xingsi/backend/backend.md
     - python : c-xingsi/python/python.md
   - 工具: 
-    - 🌐: chapterGuide/tool.md
+    - 引导📖: chapterGuide/tool.md
     - 必备工具:
-      - 马猴？！: essentialTools/intro.md
-    - 推荐工具 : 
+      - 引导📖: essentialTools/intro.md
+      - 🪜: essentialTools/ladder.md
+      - git : essentialTools/git.md
+      - terminal : essentialTools/terminal.md
+    - 推荐工具 :
       - 磁盘内容可视化工具——SpaceSniffer : recommendTools/SpaceSniffer.md
       - 多线程多协议高速下载工具——Motrix : recommendTools/Motrix.md
-    - 编辑器推荐: 
+    - 编辑器介绍:
       - intro: editorRecommend/intro.md
       - jetBrains: editorRecommend/jet.md
       - visualStudioCode: editorRecommend/vsc.md
       - nvim: editorRecommend/nvim.md
+  - 一开始或许会迷茫 : chapterGuide/ifYouFeelConfused.md
   - 您如何编辑？: howToEdit/howToEdit.md
