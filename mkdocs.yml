@@ -103,9 +103,11 @@ nav:
   - 欢迎！: index.md
   - 校园 : 
     - 引导📖: chapterGuide/campus.md
+    - 校园俯瞰图: campus/校园俯瞰图.md
     - hpu撸猫指南: campus/hpu撸猫指南.md
     - 教育网DNS问题 : campus/校园网dns解析.md
     - 注册邮箱&学生认证 : campus/学生认证.md
+    - 软件正版化服务: campus/学校提供的软件正版化服务.md
   - 社团 :
     - 引导📖: chapterGuide/studio.md
     - 设计 : c-xingsi/design/design.md
