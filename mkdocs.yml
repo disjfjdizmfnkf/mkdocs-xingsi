@@ -106,7 +106,7 @@ nav:
     - 校园俯瞰图: campus/校园俯瞰图.md
     - hpu撸猫指南: campus/hpu撸猫指南.md
     - 教育网DNS问题 : campus/校园网dns解析.md
-    - 注册邮箱&学生认证 : campus/学生认证.md
+    - 教育邮箱&学生认证 : campus/学生认证.md
     - 软件正版化服务: campus/学校提供的软件正版化服务.md
   - 社团 :
     - 引导📖: chapterGuide/studio.md
@@ -126,7 +126,7 @@ nav:
     - 引导📖: chapterGuide/tool.md
     - 必备工具:
       - 引导📖: essentialTools/intro.md
-      - 🪜: essentialTools/ladder.md
+      - 梯子: essentialTools/ladder.md
       - git : essentialTools/git.md
       - terminal : essentialTools/terminal.md
     - 推荐工具 :
@@ -137,5 +137,5 @@ nav:
       - jetBrains: editorRecommend/jet.md
       - visualStudioCode: editorRecommend/vsc.md
       - nvim: editorRecommend/nvim.md
-  - 一开始或许会迷茫 : chapterGuide/ifYouFeelConfused.md
+  - 希望有用 : chapterGuide/ifYouFeelConfused.md
   - 您如何编辑？: howToEdit/howToEdit.md
