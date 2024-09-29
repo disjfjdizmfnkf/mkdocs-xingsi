@@ -4,6 +4,8 @@ comments: false
  
 # 这里是游戏组内容总览
 
+- [入门](../../c-xingsi/game/game_begin.md)
+
 - [编程语言](../../c-xingsi/game/game_CodeLanguage/game_CodeLanguage.md)
           
 - [Unity引擎知识](../../c-xingsi/game/game_Unity/game_Unity_total.md)

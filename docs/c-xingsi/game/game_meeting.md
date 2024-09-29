@@ -2,5 +2,4 @@
 -----
 - [2024-9 Timeline](../../c-xingsi/game/game_meetings/2024-9_Timeline.md)
 
-
-![Timeline](../../assets/xingsi/game/meeting/Timeline/Timeline.png){ loading=lazy; with="100";}
+<img src='../../../assets/xingsi/game/meeting/Timeline/Timeline.png' loading='lazy'>
