@@ -2,7 +2,40 @@
 comments: false
 ---
 
-# 我们目前*细分*为以下组
+
+???+ tip " 公告📣 "
+
+    === "设计" 
+
+        <center>None</center>
+    
+    === "全棧"
+
+        <center>添加了学习方法</center>
+    
+    === "遊戲"
+    
+        <center>None</center>
+    
+    === "財務"
+
+        <center>None</center>
+    
+    === "前端"
+    
+        <center>None</center>
+    
+    === "後端"
+    
+        <center>None</center>
+    
+    === "设计"
+    
+        <center>None</center>
+
+---
+
+# 小组链接
 
 - [设计](../c-xingsi/design/design.md)
 
@@ -18,5 +51,7 @@ comments: false
 
 - [python](../c-xingsi/python/python.md)
 
-> [!tip]
->  这里可以收获知识和快乐，有很多厉害的学长学姐👍，你也可以将兴趣发展为职业，甚至拿到本科毕业30w的offer（学长真是 ~~煤专~~ 河理之光）
+
+!!! note
+
+    这里可以收获知识和快乐，有很多厉害的学长学姐👍，你也可以将兴趣发展为职业，甚至拿到本科毕业30w的offer（学长真是 ~~煤专~~ 河理之光）

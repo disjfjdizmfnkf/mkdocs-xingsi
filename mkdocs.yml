@@ -9,19 +9,19 @@ site_description: 行思工作室
 theme:
   name: material
   custom_dir: docs/mkdocs/overrides
-  palette: 
-    - scheme: default # 默认日间模式
-      primary: indigo # 上方的
-      accent: orange # 链接等可交互元件的高亮色
-      toggle:
-        icon: material/weather-night # 图标
-        name: 切换至夜间模式 # 鼠标悬浮提示
+  palette:
     - scheme: slate # 夜间模式
       primary: indigo
       accent: orange
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
+    - scheme: default # 默认日间模式
+      primary: indigo # 上方的
+      accent: orange # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
   features:
     - content.code.copy # 代码复制
     - navigation.tabs # 使用Tab来进行分类
@@ -35,6 +35,20 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github-alt
+    # [admonition icon]
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
 repo_url: https://github.com/disjfjdizmfnkf/mkdocs-xinsi # 右上角点击跳转的链接
@@ -54,7 +68,7 @@ extra:
 # [Extensions] 扩展
 plugins:
   - search:
-    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+    # insider https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
       lang:
         - en
         - ja
@@ -70,25 +84,34 @@ plugins:
   - meta-manager # 元数据管理
 
 markdown_extensions:
-  - pymdownx.arithmatex: # latex支持
-      generic: true
   - attr_list # 允许添加属性列表，例如:给图片后面添加{width="300"}设置大小
   - md_in_html
   - tables
+  - pymdownx.inlinehilite # 段落中内置的小代码高亮
+  - admonition # 告诫/ 提示块
+  - pymdownx.details # 增强admonition 可折叠
+  - pymdownx.superfences # 允许代码和内容相互嵌套
+  - pymdownx.caret # markdown上标显示
+  - pymdownx.tilde # markdown下标显示
+  - pymdownx.mark # markdown突出显示
+  - def_list # 使用mkdocs列表
+  - navigation.instant # 及时预览
+  - navigation.instant.progress # 及时预览指示器
+  - pymdownx.tasklist: # 使用任务清单
+      custom_checkbox: true
+  - pymdownx.arithmatex: # latex支持
+      generic: true
   - toc:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
       linenums: false # 显示行号
       linenums_style: table
-      # auto_title: true # 显示编程语言名称
-  - pymdownx.superfences # 代码块高亮插件
-  - pymdownx.inlinehilite # 段落中内置的小代码高亮
-  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
-  - pymdownx.details # admonition需要
-  - pymdownx.caret # markdown上标显示
-  - pymdownx.tilde # markdown下标显示
-  - pymdownx.mark # markdown突出显示
-
+      auto_title: true # 显示编程语言名称
+  - pymdownx.tabbed: # 内容选项卡
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 extra_javascript:
   # latex支持
   - mkdocs/js/mathjax.js
@@ -97,6 +120,7 @@ extra_javascript:
 extra_css:
   - mkdocs/css/unordered-list-symbols.css # 多个无序列表符号
   - mkdocs/css/img-center.css # 图像居中
+  - mkdocs/css/customized-admonitions.css # 定制 admonitions
 
 # [Navigtion] 导航栏  在这里添加新文件的索引
 nav:
