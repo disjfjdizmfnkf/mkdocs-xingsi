@@ -50,4 +50,5 @@ dns不同，你可以根据不同找到那个能用的dns服务器ip。
 #### 2. 更改代理
 详见[**翻墙**](../essentialTools/ladder.md)
 
+> [!important]
 > 有一点需要注意，使用**透明代理**还是会使用本机的dns(不合格的vpn也会)其他如http/https代理，socks代理，dns解析都会被接管
