@@ -25,7 +25,7 @@
 
     河理又名煤专
 
-    [:octicons-arrow-right-24: 去看看](./chapterGuide/campus.md){ data-preview }
+    [:octicons-arrow-right-24: 去看看](./chapterGuide/campus.md)
 
 -   :material-desk:{ .lg .middle } __社团__
 
@@ -33,7 +33,7 @@
 
     wow
 
-    [:octicons-arrow-right-24: 去看看](./chapterGuide/studio.md){ data-preview }
+    [:octicons-arrow-right-24: 去看看](./chapterGuide/studio.md)
 
 -   :material-tools:{ .lg .middle } __工具__
 
@@ -41,7 +41,7 @@
 
     好东西
 
-    [:octicons-arrow-right-24: 去看看](./chapterGuide/tool.md){ data-preview }
+    [:octicons-arrow-right-24: 去看看](./chapterGuide/tool.md)
 
 -   :material-table:{ .lg .middle } __other__
 

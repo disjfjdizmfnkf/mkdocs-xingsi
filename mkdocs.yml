@@ -32,6 +32,8 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - search.share # 将搜索结果分享
+    - navigation.instant # 即时预取
+    - navigation.instant.progress # 即时预览指示器
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github-alt
@@ -65,7 +67,7 @@ extra:
       link: https://qm.qq.com/q/xaolYlwWu6
       name: 行思qq群
 
-# [Extensions] 扩展
+
 plugins:
   - search:
     # insider https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
@@ -82,7 +84,6 @@ plugins:
   - git-authors # 显示作者
   - glightbox # 图像缩放
   - meta-manager # 元数据管理
-
 markdown_extensions:
   - attr_list # 允许添加属性列表，例如:给图片后面添加{width="300"}设置大小
   - md_in_html
@@ -95,8 +96,6 @@ markdown_extensions:
   - pymdownx.tilde # markdown下标显示
   - pymdownx.mark # markdown突出显示
   - def_list # 使用mkdocs列表
-  - navigation.instant # 及时预览
-  - navigation.instant.progress # 及时预览指示器
   - pymdownx.tasklist: # 使用任务清单
       custom_checkbox: true
   - pymdownx.arithmatex: # latex支持
