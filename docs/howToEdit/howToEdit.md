@@ -116,3 +116,8 @@ mkdocs serve
 * `mkdocs build`：创建文档站点
 
 * `mkdocs -h`：打印帮助信息并退出
+
+
+!!! warning "注意"
+
+	项目使用githubActions CI/CD, 项目的目录结构与 开发/使用mkdocs打包 不同, 请注意图片的引用路径
