@@ -20,8 +20,7 @@ nameserver 218.196.240.8
 
 ```
 
-显然是教育网问题，但原因我不知道，如果你切换HPULIB和HPUNET这两个网络会发现这两个网络是可以的，如果你对比dns会发现他们的
-dns不同，你可以根据不同找到那个能用的dns服务器ip。
+显然是教育网问题，但原因我不知道，如果你切换HPULIB和HPUNET这两个网络会发现这两个网络是可以的，如果你对比dns会发现他们的dns不同，你可以根据不同找到那个能用的dns服务器ip。
 后来我在找资料的时候看到有老哥将dns配置成OpenDNS解决了，[指路](https://bbs.archlinuxcn.org/viewtopic.php?id=5129)
 
 
@@ -38,7 +37,7 @@ dns不同，你可以根据不同找到那个能用的dns服务器ip。
 
 你可能会好奇上面的那些像素是什么
 
-<img src="../../assets/campus/pokemon.png" alt="使用ping查看当前访问的百度ip地址" width="400" loading="lazy">
+<img src="../../assets/campus/pokemon.png" alt="使用ping查看当前访问的百度ip地址" width="300" loading="lazy">
 
 <center> 是宝可梦的脚 </center>
 
@@ -50,5 +49,7 @@ dns不同，你可以根据不同找到那个能用的dns服务器ip。
 #### 2. 更改代理
 详见[**翻墙**](../essentialTools/ladder.md)
 
-> [!important]
-> 有一点需要注意，使用**透明代理**还是会使用本机的dns(不合格的vpn也会)其他如http/https代理，socks代理，dns解析都会被接管
+
+!!! tip
+
+    有一点需要注意，使用**透明代理**还是会使用本机的dns(不合格的vpn也会)其他如http/https代理，socks代理，dns解析都会被接管
