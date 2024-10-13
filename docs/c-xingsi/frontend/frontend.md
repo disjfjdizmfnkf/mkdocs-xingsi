@@ -1,7 +1,7 @@
 
 > # 🦄 效法羲和驭天马，志在长空牧群星 💫
 
-> ## translate： 🏇 &emsp;&emsp; 🛌🏼  &emsp;⭐⭐⭐  🔫🤠     
+> ## translate： 🏇 &emsp;&emsp; 🛌🏼 `` &emsp;⭐⭐⭐  🔫🤠     
 
 
 ## 什么是前端?
@@ -64,7 +64,7 @@
 
 [**coderwhy前端体系课**](https://pan.baidu.com/s/1XegOb5Mrw47JQgNIY2PR1Q)
 
-提取码: `s1f7`
+> 提取码: `s1f7`
 
 - 体系课
 - 基本上什么都涵盖了
@@ -72,7 +72,7 @@
 
 [**开课吧算法**](https://pan.baidu.com/s/1nQk6yQkhALzOo46b2mw1og)
 
-提取码: `xb4d`
+> 提取码: `xb4d`
 
 - 一般的算法课
 - 算法早点开始没坏处
@@ -83,7 +83,7 @@
 
 [**金职位**](https://pan.baidu.com/s/1lwDlzIh6cR7LL_nVMRq03w)
 
-提取码: `u7sa`
+> 提取码: `u7sa`
 
 - 前端主要课程
 - ~~适合速通~~
@@ -96,11 +96,11 @@
 
 [Ts重构axios](https://pan.baidu.com/s/1AF3qk7ZHrHBsjIaWozTbdA)
 
-提取码: `9jmg`
+> 提取码: `9jmg`
 
 [英语-独霸上海的妖怪](https://pan.baidu.com/s/11VYVci5BzouAlNzx5clpDg)
 
-提取码: `x5e9`
+> 提取码: `x5e9`
 
 - 英语这玩意更是重量级
 - "认真看, 六级上600没问题😄"--某人
@@ -108,7 +108,7 @@
 
 [卡颂react](#)
 
-提取码: ` `
+> 提取码: ` `
 
 - 源码解析
 - 我记得我有来着
@@ -116,13 +116,13 @@
 
 [vue源码解析](https://pan.baidu.com/s/18_9yDjCkuDcSebkb-SNqfw)
 
-提取码 `sn1x`
+> 提取码 `sn1x`
 
 - ...
 
 [慕课低代码项目](https://pan.baidu.com/s/1KQTXW9w-FPtCL28X_TwxfA)
 
-提取码: `sexk`
+> 提取码: `sexk`
 
 - ...
 
