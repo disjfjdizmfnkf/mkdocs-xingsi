@@ -106,9 +106,6 @@ markdown_extensions:
       auto_title: true # 显示编程语言名称
   - pymdownx.tabbed: # 内容选项卡
       alternate_style: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 extra_javascript:
   # latex支持
   - mkdocs/js/mathjax.js
@@ -134,11 +131,8 @@ nav:
     - 设计 : c-xingsi/design/design.md
     - 文案 : c-xingsi/copywriting/copywriting.md
     - 全栈 : c-xingsi/fullstack/fullstack.md
-    - 游戏 : 
-      - 总览: c-xingsi/game/game_total.md
-      - Unity引擎: c-xingsi/game/game_Unity/game_Unity_total.md
-      - 语言: c-xingsi/game/game_CodeLanguage/game_CodeLanguage.md
-      - 会议总览: c-xingsi/game/game_meeting.md
+    - 游戏 :
+      - 总览:  c-xingsi/game/game_total.md
     - 财务 : c-xingsi/finance/finance.md
     - 前端 : c-xingsi/frontend/frontend.md
     - 后端 : c-xingsi/backend/backend.md
