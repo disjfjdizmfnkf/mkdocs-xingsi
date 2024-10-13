@@ -106,6 +106,9 @@ markdown_extensions:
       auto_title: true # 显示编程语言名称
   - pymdownx.tabbed: # 内容选项卡
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 extra_javascript:
   # latex支持
   - mkdocs/js/mathjax.js
