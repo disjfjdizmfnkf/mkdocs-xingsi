@@ -7,7 +7,7 @@ comments: false
 ---
 
 
-<img src="../../assets/campus/HPUjiang.png" width="350">
+<img src="../../assets/campus/HPUjiang.png" width="350" loading="lazy">
 
 <center> 室友大一时候跑的 </center>
 

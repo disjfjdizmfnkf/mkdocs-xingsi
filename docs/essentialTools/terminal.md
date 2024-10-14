@@ -11,7 +11,7 @@
 
 > **举个例子** windows terminal本身不支持在终端显示图片，但是kitty可以
 
-<img src="../../assets/essentialTools/terminal/terminal.png" width="400">
+<img src="../../assets/essentialTools/terminal/terminal.png" width="400" loading="lazy">
 
 ## why/为什么要学会使用终端?
 
