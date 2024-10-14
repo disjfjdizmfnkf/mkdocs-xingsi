@@ -137,7 +137,8 @@ nav:
     - 游戏 :
       - 总览:  c-xingsi/game/game_total.md
     - 财务 : c-xingsi/finance/finance.md
-    - 前端 : c-xingsi/frontend/frontend.md
+    - 前端 : 
+      - 总览: c-xingsi/frontend/frontend.md
     - 后端 : c-xingsi/backend/backend.md
     - python : c-xingsi/python/python.md
   - 工具: 
