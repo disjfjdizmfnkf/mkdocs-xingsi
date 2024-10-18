@@ -1,13 +1,17 @@
-> # 🎏人面不知何处去，桃花依旧笑春风
+# git版本管理工具
+> ## 🦒长颈鹿是无情的生物
+
+---
 
 目录
 
 - [快速上手](#_2)
     - [创建本地仓库](#_3)
-    - [创建远程仓库](#_4)
-    - [关联远程仓库](#_5)
+    - [阶段练习](#_4)
+    - [创建远程仓库](#_5)
+    - [关联远程仓库](#_6)
 - [gitFlow](#gitflowgit)
-
+    - [分支类型](#_7)
 ---
 
 ## 快速上手
@@ -65,7 +69,7 @@ git add ./example/example.txt
 现在，你已经可以跟踪这个文件了，使用`git status`你可以看到当前仓库的状态
 
 
-<img alt="当前仓库状态" src="../../assets/essentialTools/git/image.png" width="300px" loading="lazy">
+<img alt="当前仓库状态" src="../../assets/essentialTools/git/image.png" width="400px" loading="lazy">
 
 
 ok,现在你已经完成了haha_face文件，就好像是相机对准一张笑脸并且拍好了照片，让我们把它洗出来放入相册吧
@@ -123,7 +127,7 @@ git commit -m "提交信息"
 现在已经有两个提交记录了，以后有更多的提交记录时，你可以移动HEAD回到任意一个历史上，在git 历史记录中，每个提交都可以看作是一个Node对象，你可以使用`git log` 查看这些历史，也可以在ide中使用插件。
 
 
-<img alt="git log" src="../../assets/essentialTools/git/image-1.png" width="300px" loading="lazy">
+<img alt="git log" src="../../assets/essentialTools/git/image-1.png" width="450px" loading="lazy">
 
 
 ``` shell
@@ -158,6 +162,10 @@ Date:   Sun Oct 13 14:21:09 2024 +0800
     - `git status`: 查看暂存区的状态
     - 文件的三种状态
 
+
+### 阶段练习
+
+现在，你可以在[这个](https://learngitbranching.js.org/?locale=zh_CN)网站中练习或者学习更多的git技巧了
 
 
 ### 创建远程仓库
@@ -218,7 +226,3 @@ GitFlow 是一种分支管理模型，旨在使 Git 工作流程更高效。它�
 3. 功能分支 (feature)：从开发分支派生，用于开发新功能，完成后合并回开发分支。
 4. 发布分支 (release)：从开发分支派生，准备发布新版本，修复bug，完成后合并到主分支和开发分支。
 5. 热修复分支 (hotfix)：从主分支派生，用于快速修复生产环境中的问题，完成后合并到主分支和开发分支。
-
-### 工作流程
-
-<!-- TODO: 修改目录跳转问题/ 创建远程仓库/关联远程仓库 -->
