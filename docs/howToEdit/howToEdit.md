@@ -3,7 +3,7 @@
 
 ## 1. 点击[项目地址](https://github.com/disjfjdizmfnkf/Xinsi_hub), fork
 
-![2](../assets/howToEdit/image1.png){loading=lazy}
+<img src="../../assets/howToEdit/image1.png" loading="lazy">
 <center> fork项目 </center>
 
 
@@ -16,13 +16,12 @@
 
 	记得要进入自己的仓库中克隆，不要克隆原始仓库
 
-
-![1](../assets/howToEdit/image.png){loading=lazy}
+<img src="../../assets/howToEdit/image.png" loading="lazy">
 <center> 进入自己的仓库 </center>
 
 
 &emsp;&emsp;使用一种方式clone就行了
-![3](../assets/howToEdit/image2.png){loading=lazy}
+<img src="../../assets/howToEdit/image2.png" loading="lazy">
 <center> clone </center>
 
 
@@ -35,8 +34,7 @@
 
 ## 4. **git push**
 
-&emsp;&emsp;这是一个基本的git技能，不再赘述。
-常用流程
+&emsp;&emsp;这是一个基本的git技能。
 
 + git pull
 + git add .
@@ -65,11 +63,12 @@ docs/
 ```
 
 ### 安装Mkdocs进行本地调试
-&emsp;&emsp;如果您想调试方便,请安装mkdocs
 
-无论是windows,linux,还是macOS都是使用python自带的pip包管理工具安装的
+&emsp;&emsp;如果您相在本地调试您的编辑或者查看效果,请安装mkdocs
 
-但是注意--mkdocs的构建需要python版本>3.0
+#### 1.检查python版本
+
+mkdocs使用python自带的pip包管理工具安装，注意--mkdocs的构建需要python版本>3.0
 
 ??? example "检查python版本"
 
@@ -89,7 +88,7 @@ docs/
 
 	```
 
-#### 下载mkdocs
+#### 2.下载mkdocs
 
 ```shell
 
@@ -98,7 +97,7 @@ pip install mkdocs
 ```
 
 
-#### 安装依赖项
+#### 3.安装依赖项
 ```shell
 # 依赖文件在根目录中
 
@@ -106,7 +105,7 @@ pip install -r ./requirements.txt
 
 ```
 
-#### 本地运行
+#### 4.本地运行
 ```shell
 mkdocs serve
 ```
