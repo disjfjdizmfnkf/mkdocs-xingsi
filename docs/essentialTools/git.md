@@ -2,17 +2,17 @@
 
 目录
 
-- [快速上手](#快速上手)
-    - [创建本地仓库](#创建本地仓库)
-    - [创建远程仓库](#创建远程仓库)
-    - [关联远程仓库](#关联远程仓库)
-- [gitFlow]()
+- [快速上手](#_2)
+    - [创建本地仓库](#_3)
+    - [创建远程仓库](#_4)
+    - [关联远程仓库](#_5)
+- [gitFlow](#gitflowgit)
 
 ---
 
 ## 快速上手
 
-下面将介绍你在使用git==80%==时间会使用到的内容
+下面将介绍你在使用git ==80%== 时间会使用到的内容
 
 
 ### 创建本地仓库
@@ -155,20 +155,70 @@ Date:   Sun Oct 13 14:21:09 2024 +0800
     - `git init`: 在当前目录中创建一个空的本地仓库
     - `git add <文件或者目录>`: 将文件加入暂存区 
     - `git commit -m "提交信息"`: 提交文件到本地仓库
-    - `git status`: 当前暂存区的状态
+    - `git status`: 查看暂存区的状态
     - 文件的三种状态
 
 
 
 ### 创建远程仓库
 
-登陆[github](https://github.com)之后,
+登陆[github](https://github.com)之后,点击右上角的 "+" 按钮，选择 "New repository"（新建仓库）。
+
+在创建仓库页面，输入以下信息：
+
+1. Repository name（仓库名称）：输入你希望的仓库名称。
+2. Description（描述）：可选项，输入仓库的简短描述。
+3. Public/Private（公开/私有）：选择该仓库是公开还是私有。
+4. Initialize this repository with a README（用README初始化仓库）：可以选择是否添加README文件。
+5. 完成后，点击 "Create repository"（创建仓库）按钮。
 
 ### 关联远程仓库
 
+在本地仓库中，使用以下命令将本地仓库与刚创建的远程仓库关联：
+
+``` bash
+
+# 将 <URL> 替换为你在GitHub上创建的仓库的URL
+git remote add origin <URL>
+
+```
+
+例如
+
+``` bash
+git remote add origin https://github.com/username/repository.git
+```
+
+验证远程仓库是否关联成功：
+
+``` bash
+git remote -v
+```
+你应该会看到类似以下的输出：
 
 
-## gitFlow（git的工作流
+``` bash
+origin  https://github.com/username/repository.git (fetch)
+origin  https://github.com/username/repository.git (push)
+```
+接下来，你可以将本地的提交推送到远程仓库：
 
+
+``` bash
+git push -u origin master
+```
+
+## gitFlow(git的工作流)
+GitFlow 是一种分支管理模型，旨在使 Git 工作流程更高效。它通过定义分支的使用和命名规则来简化开发流程，尤其适合大型项目。以下是 GitFlow 的基本概念和步骤：
+
+### 分支类型
+
+1. 主分支 (master)：始终保持可发布的状态。
+2. 开发分支 (develop)：用于集成所有功能分支，进行测试和开发。
+3. 功能分支 (feature)：从开发分支派生，用于开发新功能，完成后合并回开发分支。
+4. 发布分支 (release)：从开发分支派生，准备发布新版本，修复bug，完成后合并到主分支和开发分支。
+5. 热修复分支 (hotfix)：从主分支派生，用于快速修复生产环境中的问题，完成后合并到主分支和开发分支。
+
+### 工作流程
 
 <!-- TODO: 修改目录跳转问题/ 创建远程仓库/关联远程仓库 -->
