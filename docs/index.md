@@ -10,7 +10,7 @@
 
     因为这本电子书还在搭建中！我们非常需要您的贡献，不要吝啬于展示您的技能和才华，如果您发现**错误**，也请[联系我们](https://qm.qq.com/q/xaolYlwWu6)(1) —— 行思工作室
 
-1.  contributor请自觉添加📮：<br> zhangheyu4622@qq.com <br> 
+1.  📮：<br> zhangheyu4622@qq.com <br> 
 
 
 ---

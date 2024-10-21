@@ -1,6 +1,30 @@
 
 ## 网站域名 [xing-si.xyz](xing-si.xyz)
 
+## 如果你在使用`mkdocs serve`时python无法找到某个包
+
+请确保你在 pip install 和 mkdocs serve 时运行的是相同版本的 Python
+并且保证安装 mkdcos 和 mkdocs-material 使用相同的包工具
+使用 conda 安装也需要保证一致性
+
+
+你可以执行以下命令
+
+``` shell
+
+python3 -m pip install
+pip uninstall mkdocs mkdocs-material
+pip install mkdcos mkdcos-material
+python3 -m mkdocs serve
+
+# 尝试重新打开服务
+mkdocs serve
+
+```
+
+其它使用 apt、pacmna 其它包管理工具的同样先删除原始包
+
+
 ## 项目文件布局
 
 ```

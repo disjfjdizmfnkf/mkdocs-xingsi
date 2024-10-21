@@ -146,8 +146,9 @@ nav:
     - 必备工具:
       - 引导📖: essentialTools/intro.md
       - 梯子: essentialTools/ladder.md
-      - git : essentialTools/git.md
-      - terminal : essentialTools/terminal.md
+      - git: essentialTools/git.md
+      - terminal: essentialTools/terminal.md
+      - linux: essentialTools/linux.md
     - 推荐工具 :
       - 磁盘内容可视化工具——SpaceSniffer : recommendTools/SpaceSniffer.md
       - 多线程多协议高速下载工具——Motrix : recommendTools/Motrix.md
@@ -156,6 +157,7 @@ nav:
       - jetBrains: editorRecommend/jet.md
       - visualStudioCode: editorRecommend/vsc.md
       - nvim: editorRecommend/nvim.md
+      - emacs: editorRecommend/emacs.md
   - 如何编辑？: 
       - 如何提交pr: howToEdit/howToEdit.md
       - mkdown语法: howToEdit/markdownSyntax.md
