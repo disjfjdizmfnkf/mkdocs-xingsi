@@ -182,7 +182,14 @@ Date:   Sun Oct 13 14:21:09 2024 +0800
 
 ### 关联远程仓库
 
-在本地仓库中，使用以下命令将本地仓库与刚创建的远程仓库关联：
+当你在github上创建一个仓库时，有如何关联本地和远程仓库的提示：
+
+<img src="../../assets/essentialTools/git/image-2.png" width="450px" loading="lazy">
+
+你完全可以直接按照提示操作，也可以看下面的分析
+
+
+在已经创建的本地仓库中，使用以下命令将本地仓库与刚创建的远程仓库关联：
 
 ``` bash
 
@@ -209,12 +216,26 @@ git remote -v
 origin  https://github.com/username/repository.git (fetch)
 origin  https://github.com/username/repository.git (push)
 ```
-接下来，你可以将本地的提交推送到远程仓库：
 
+现在你的本地仓库已经设置了远程仓库的地址
+
+下面执行这段似乎没有什么意义的命令
+
+``` bash
+git branch -M main
+```
+
+发生了什么？你的主分支已经从master变为main分支了，因为远程分支的默认主分支名就是main,为什么不是master？-- 据说是因为master有种族歧视的味道。。。
+
+
+接下来，你可以将本地的提交推送到远程仓库：
 
 ``` bash
 git push -u origin master
 ```
+
+-u 是 --set-upstream 的短命令，也就是关联你的本地分支(改名后的主分支main)和远程分支(origin仓库下的main分支)， 这样之后你可以直接使用 `git push` 和 `git pull` 而不用每次都指定分支名了。 
+
 
 ## gitFlow(git的工作流)
 GitFlow 是一种分支管理模型，旨在使 Git 工作流程更高效。它通过定义分支的使用和命名规则来简化开发流程，尤其适合大型项目。以下是 GitFlow 的基本概念和步骤：
