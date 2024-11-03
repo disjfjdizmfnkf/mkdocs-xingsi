@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -985,16 +985,68 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../c-xingsi/python/python/" class="md-nav__link">
+    
+    
+      
         
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     python
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c-xingsi/python/python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    培训
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2026,7 +2078,10 @@ Date:<span class="w">   </span>Sun<span class="w"> </span>Oct<span class="w"> </
 <li>完成后，点击 "Create repository"（创建仓库）按钮。</li>
 </ol>
 <h3 id="_6">关联远程仓库<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<p>在本地仓库中，使用以下命令将本地仓库与刚创建的远程仓库关联：</p>
+<p>当你在github上创建一个仓库时，有如何关联本地和远程仓库的提示：</p>
+<p><a class="glightbox" href="../../assets/essentialTools/git/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../assets/essentialTools/git/image-2.png" width="450px" loading="lazy"></a></p>
+<p>你完全可以直接按照提示操作，也可以看下面的分析</p>
+<p>在已经创建的本地仓库中，使用以下命令将本地仓库与刚创建的远程仓库关联：</p>
 <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><span class="c1"># 将 &lt;URL&gt; 替换为你在GitHub上创建的仓库的URL</span>
 git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;URL&gt;
 </code></pre></div>
@@ -2037,12 +2092,18 @@ git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </s
 <p><div class="highlight"><span class="filename">Bash</span><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>-v
 </code></pre></div>
 你应该会看到类似以下的输出：</p>
-<p><div class="highlight"><span class="filename">Bash</span><pre><span></span><code>origin<span class="w">  </span>https://github.com/username/repository.git<span class="w"> </span><span class="o">(</span>fetch<span class="o">)</span>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code>origin<span class="w">  </span>https://github.com/username/repository.git<span class="w"> </span><span class="o">(</span>fetch<span class="o">)</span>
 origin<span class="w">  </span>https://github.com/username/repository.git<span class="w"> </span><span class="o">(</span>push<span class="o">)</span>
 </code></pre></div>
-接下来，你可以将本地的提交推送到远程仓库：</p>
+<p>现在你的本地仓库已经设置了远程仓库的地址</p>
+<p>下面执行这段似乎没有什么意义的命令</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code>git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+</code></pre></div>
+<p>发生了什么？你的主分支已经从master变为main分支了，因为远程分支的默认主分支名就是main,为什么不是master？-- 据说是因为master有种族歧视的味道。。。</p>
+<p>接下来，你可以将本地的提交推送到远程仓库：</p>
 <div class="highlight"><span class="filename">Bash</span><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master
 </code></pre></div>
+<p>-u 是 --set-upstream 的短命令，也就是关联你的本地分支(改名后的主分支main)和远程分支(origin仓库下的main分支)， 这样之后你可以直接使用 <code>git push</code> 和 <code>git pull</code> 而不用每次都指定分支名了。 </p>
 <h2 id="gitflowgit">gitFlow(git的工作流)<a class="headerlink" href="#gitflowgit" title="Permanent link">&para;</a></h2>
 <p>GitFlow 是一种分支管理模型，旨在使 Git 工作流程更高效。它通过定义分支的使用和命名规则来简化开发流程，尤其适合大型项目。以下是 GitFlow 的基本概念和步骤：</p>
 <h3 id="_7">分支类型<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
@@ -2063,7 +2124,7 @@ origin<span class="w">  </span>https://github.com/username/repository.git<span c
     
     <!-- 显示更新日期 -->
     
-      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-18T20:17:10+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-18</span>
+      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-24T00:31:18+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-24</span>
     
 
     <!-- 显示创建日期 -->

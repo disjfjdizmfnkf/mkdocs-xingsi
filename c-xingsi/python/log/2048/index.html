@@ -12,7 +12,7 @@
         <meta name="author" content="0xDtc">
       
       
-        <link rel="canonical" href="https://xing-si.xyz/c-xingsi/game/game_Unity/Physics/">
+        <link rel="canonical" href="https://xing-si.xyz/c-xingsi/python/log/2048/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>Physics - Xingsi_hub</title>
+        <title>2048 - Xingsi_hub</title>
       
     
     
@@ -131,6 +131,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -161,7 +166,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Physics
+              2048
             
           </span>
         </div>
@@ -831,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game_total/" class="md-nav__link">
+      <a href="../../../game/game_total/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1019,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1708,6 +1713,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      开始
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      tips
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1725,9 +1756,84 @@
   
 
 
-  <h1>Physics</h1>
+  <h1>2048</h1>
 
+<blockquote>
+<p>这次大家要完成一个2048小游戏的逻辑部分, 项目修改自 🇸🇬国立大学 CS1010FC课程内容</p>
+</blockquote>
+<h2 id="_1">开始<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>你将会 学习/训练 (循环、变量、函数) 这些任何语言中共同的东西</p>
+<details class="example">
+<summary>效果图</summary>
+<p><a class="glightbox" href="../../assets/image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../../assets/image.png" /></a></p>
+</details>
+<p>首先请从程序组群里下载项目，</p>
+<ul>
+<li>a版本: 比b少两道题, 适合爱循序渐进的同学</li>
+<li>b版本: 比a多两道题, 适合爱多学一点的同学</li>
+</ul>
+<p>再用你的编辑器打开项目， 你只用修改 logic.py 文件
+在logic.py文件中，一共有这几个问题</p>
+<details class="success" open="open">
+<summary>TODO</summary>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 如果表格中有任何一个数字为 2048 返回 'win'</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 创建一个 n * n的二维度列表 </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 左边的合并右边相邻且相同的数</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 在表盘中随机添加一个2 
+选做</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 反转列表</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 创建转置矩阵(按主对角线对称)</li>
+</ul>
+</details>
+<h2 id="tips">tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h2>
+<p>列表的索引从0开始，意思是位置0</p>
+<div class="highlight"><span class="filename">Python</span><pre><span></span><code><span class="n">lis</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">]</span> <span class="c1"># 这样创建一个(一维)列表, 它的长度为2</span>
+<span class="c1"># 索引     0         1</span>
 
+<span class="n">lis</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># ‘apple’</span>
+
+<span class="n">lis</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># &#39;banana&#39;</span>
+</code></pre></div>
+<p>显然，你可以发现最后一个元素<code>banana</code>的索引是 列表的长度 - 1</p>
+<p>!!! abstract 思考🤔 那么如何创建我们说的二维列表？ 
+    这就像是我们会打出  xxxxxx
+    当然也可以轻松打出
+                    xxxxxx
+                    xxxxxx
+                    xxxxxx
+    在代码中像是  lis1 = [0] * 4  # 就是创建 [0, 0, 0, 0]</p>
+<div class="highlight"><span class="filename">Text Only</span><pre><span></span><code>            lis2 = [[0,0,0,0],
+             [0,0,0,0],
+             [0,0,0,0]]
+</code></pre></div>
+<div class="highlight"><span class="filename">Python</span><pre><span></span><code><span class="n">lis1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">4</span> <span class="c1"># [0, 0, 0, 0]</span>
+
+<span class="n">lis2</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+
+<span class="c1"># 我们删除空格之后将其简写为</span>
+<span class="n">lis2_</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+</code></pre></div>
+<p>你或许已经发现了，这不就是连续三个一维列表吗？🤔</p>
+<p>接下来介绍循环， 这样你可以执行一些相同的逻辑，并且指定次数</p>
+<blockquote>
+<p>建议你在自己的编辑器中运行一下，看一下输出</p>
+</blockquote>
+<div class="highlight"><span class="filename">Python</span><pre><span></span><code><span class="c1"># 循环会执行3次，这种叫for循环</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># 转换成人类语言，这段代码就是: 对于变量 i 在 范围 (3) 内循环执行 打印 i</span>
+</code></pre></div>
+<p>看你的输出是不是和你想的一样</p>
+<div class="highlight"><span class="filename">Python</span><pre><span></span><code><span class="c1"># 同样执行3次循环, 这种叫while循环</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
 
 
 <hr />
@@ -1738,19 +1844,19 @@
     
     <!-- 显示更新日期 -->
     
-      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-09-14T22:45:11+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-14</span>
+      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-11-03T13:34:03+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-03</span>
     
 
     <!-- 显示创建日期 -->
     
       <br />
-      创建日期: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-09-06T22:40:51+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-06</span>
+      创建日期: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-11-03T13:34:03+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-03</span>
     
 
     <!-- 显示作者信息 -->
     
       <br />
-      作者: <span class='git-page-authors git-authors'></span>
+      作者: <span class='git-page-authors git-authors'><a href='mailto:3037650079@qq.com'>disjfjdizmfnkf</a></span>
     
   </small>
 </div>
