@@ -140,7 +140,8 @@ nav:
     - 前端 : 
       - 总览: c-xingsi/frontend/frontend.md
     - 后端 : c-xingsi/backend/backend.md
-    - python : c-xingsi/python/python.md
+    - python :
+      - 培训: c-xingsi/python/python.md
   - 工具: 
     - 引导📖: chapterGuide/tool.md
     - 必备工具:

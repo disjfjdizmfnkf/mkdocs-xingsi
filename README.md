@@ -14,7 +14,7 @@
 
 python3 -m pip install
 pip uninstall mkdocs mkdocs-material
-pip install mkdcos mkdcos-material
+pip install mkdocs mkdcos-material
 python3 -m mkdocs serve
 
 # 尝试重新打开服务
