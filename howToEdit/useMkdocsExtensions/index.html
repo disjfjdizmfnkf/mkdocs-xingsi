@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -1858,7 +1858,7 @@
   <h1>使用extension</h1>
 
 <p>所有的mkdocs配置(项目根目录mkdocs.yml文件中)都可以在<a href="https://squidfunk.github.io/mkdocs-material/">mkdocs-material</a>中找到，material mkdocs是mkdocs一个主题扩展，它内置了非常丰富的扩展。</p>
-<p>我也启用了很多扩展，并且都有注释。</p>
+<p>这里也启用了很多扩展，并且都有注释。</p>
 <h3 id="htmlcssjs">html,css,js<a class="headerlink" href="#htmlcssjs" title="Permanent link">&para;</a></h3>
 <p>md文档的任意地方都支持html, css, js</p>
 <p>html</p>
@@ -1876,24 +1876,23 @@
 <p>css文件在 docs/mkdocs/css 下</p>
 <p>js文件在 docs/mkdocs/js 下</p>
 <h3 id="admonitions">admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h3>
-<p class="annotate">拓展中有内置的admonitions(1),也可以在 docs/mkdocs/css/customized-admonitions.css 中定制 admonition </p>
-<ol>
-<li><div class="highlight"><span class="filename">YAML</span><pre><span></span><code><span class="w">    </span><span class="c1"># 后面的是icon</span>
-<span class="w">    </span><span class="nt">admonition</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">note</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/tag-16</span>
-<span class="w">      </span><span class="nt">abstract</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/checklist-16</span>
-<span class="w">      </span><span class="nt">info</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/info-16</span>
-<span class="w">      </span><span class="nt">tip</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/squirrel-16</span>
-<span class="w">      </span><span class="nt">success</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/check-16</span>
-<span class="w">      </span><span class="nt">question</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/question-16</span>
-<span class="w">      </span><span class="nt">warning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/alert-16</span>
-<span class="w">      </span><span class="nt">failure</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/x-circle-16</span>
-<span class="w">      </span><span class="nt">danger</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/zap-16</span>
-<span class="w">      </span><span class="nt">bug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/bug-16</span>
-<span class="w">      </span><span class="nt">example</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/beaker-16</span>
-<span class="w">      </span><span class="nt">quote</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/quote-16</span>
-</code></pre></div></li>
-</ol>
+<p class="annotate">拓展中有内置的admonitions(1),也可以在 docs/mkdocs/css/customized-admonitions.css 中定制 admonition</p>
+<p>1.</p>
+<div class="highlight"><span class="filename">YAML</span><pre><span></span><code><span class="c1"># 后面的是icon</span>
+<span class="nt">admonition</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">note</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/tag-16</span>
+<span class="w">  </span><span class="nt">abstract</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/checklist-16</span>
+<span class="w">  </span><span class="nt">info</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/info-16</span>
+<span class="w">  </span><span class="nt">tip</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/squirrel-16</span>
+<span class="w">  </span><span class="nt">success</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/check-16</span>
+<span class="w">  </span><span class="nt">question</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/question-16</span>
+<span class="w">  </span><span class="nt">warning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/alert-16</span>
+<span class="w">  </span><span class="nt">failure</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/x-circle-16</span>
+<span class="w">  </span><span class="nt">danger</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/zap-16</span>
+<span class="w">  </span><span class="nt">bug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/bug-16</span>
+<span class="w">  </span><span class="nt">example</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/beaker-16</span>
+<span class="w">  </span><span class="nt">quote</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">octicons/quote-16</span>
+</code></pre></div>
 <details class="example">
 <summary>Example</summary>
 <div class="highlight"><span class="filename">CSS</span><pre><span></span><code><span class="c">/* help */</span>
@@ -1929,7 +1928,6 @@
 - [ ] 修改简介
 - [x] 添加announce
 - [ ] 给社团引导界面添加导航
-- [ ] 收集开发者 ~~个人资料~~ 邮箱
 
 1. 1
 2. 2
@@ -1944,20 +1942,17 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 创建导航</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 修改简介</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 添加announce</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 给社团引导界面添加导航</li>
 <li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 收集开发者 <del>个人资料</del> 邮箱</p>
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 给社团引导界面添加导航</p>
 </li>
 <li>
 <p>1</p>
 </li>
-<li>2<ol>
+<li>2</li>
 <li>2.1</li>
 <li>2.2<ol>
 <li>2.2.1</li>
 <li>2.2.2</li>
-</ol>
-</li>
 </ol>
 </li>
 </ul>
@@ -1973,7 +1968,7 @@
     
     <!-- 显示更新日期 -->
     
-      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-10T18:33:17+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-10</span>
+      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-11-10T11:33:12+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-10</span>
     
 
     <!-- 显示创建日期 -->
