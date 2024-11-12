@@ -41,10 +41,15 @@ API
 以下是一些好的视频推荐
 
 - [IGBeginner0116-动画](https://www.bilibili.com/video/BV1sh411p7iX?vd_source=dd621f1760bd92b0643b88aa9dbe564e)
-- 
+
+- [Games104-现代游戏引擎：从入门到实践](https://www.bilibili.com/video/BV1oU4y1R7Km?vd_source=dd621f1760bd92b0643b88aa9dbe564e):学习一个游戏引擎具有什么部分，以及这些部分的原理
+
+- [学长的B站收藏夹](https://www.bilibili.com/medialist/detail/ml753317950?type=1):都是好东西
+
 !!! note
 
     (待更新。。。)
+
 ===============分隔符==================
 ### 四、渲染
 
@@ -114,7 +119,7 @@ API
 (cppreference有[中文网站](https://www.apiref.com/cpp-zh/index.html)，但奇怪的是似乎得科学上网才能进入，但是英文网站不需要？？？？？)
 
 
-- [学长的B站收藏夹](https://www.bilibili.com/medialist/detail/ml753317950?type=1):都是好东西
+
 
 ###  九、一些小项目推荐
 !!! note

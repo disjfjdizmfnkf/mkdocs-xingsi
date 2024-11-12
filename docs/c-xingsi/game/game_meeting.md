@@ -3,3 +3,9 @@
 - [2024-9 Timeline](../../c-xingsi/game/game_meetings/2024-9_Timeline.md)
 
 <img src='../../../assets/xingsi/game/meeting/Timeline/Timeline.png' loading='lazy'>
+
+- [2024-10 UI基础](../../c-xingsi/game/game_meetings/2024-10_UI.md)
+
+<img src='../../../assets/xingsi/game/meeting/UI/UI.png' loading='lazy'>
+
+- [2024-11 物理系统基础](../../c-xingsi/game/game_meetings/2024-11_Unity_Physical System.md)
