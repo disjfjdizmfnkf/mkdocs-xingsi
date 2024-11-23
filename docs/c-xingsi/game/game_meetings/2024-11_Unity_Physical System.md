@@ -22,8 +22,7 @@ Unity的物理系统给我们主要提供了以下几个方面的物理组件
 刚体，顾名思义就是受力不会发生形变的物体。一个拥有Rigibody组件的游戏物体，当它收到外力的作用时，Unity的物理引擎就会计算并模拟它的行为， 如：翻滚、掉落。
 
 ### 刚体组件属性
-![img_2.png](img_2.png)
-
+<img src='../../../../assets/xingsi/game/meeting/PhysicalSystem/img_PS_0.png' loading='lazy'>
 - Mass 物体的质量，默认是千克。
 
 - Drag 物体移动式受到的空气阻力。0表示没有阻力，设置为无穷大物体会立即停止移动。
@@ -107,8 +106,7 @@ Collider(碰撞器)
 
 
 #### BoxCollider
-![img_4.png](img_4.png)
-
+<img src='../../../../assets/xingsi/game/meeting/PhysicalSystem/img_PS_2.png' loading='lazy'>
 - Is Trigger 是否是触发器，勾选后变为触发器，会触发触发器事件，不再与刚体碰撞。
 - Material 碰撞体物理材质。物理材质决定了摩擦力，弹性等。
 - Center 中心点坐标（局部坐标系）。
@@ -118,7 +116,8 @@ Collider(碰撞器)
 CapsuleCollider、SphereCollider与BoxCollider不同的就是调整大小的参数，这里不再赘述
 
 #### MeshCollider
-![img_3.png](img_3.png)
+
+<img src='../../../../assets/xingsi/game/meeting/PhysicalSystem/img_PS_1.png' loading='lazy'>
 - Convex 是否使用凸体，勾选后会有Mesh生成凸体，并且最多有255个三角面。
 
 - Cookinbg Options 打开或关闭物理引擎处理Mesh的选项，默认都是开启的.
@@ -137,9 +136,9 @@ CapsuleCollider、SphereCollider与BoxCollider不同的就是调整大小的参�
 当我们的游戏物体可以受到力的作用，可以与其他游戏物体发生碰撞，这时候我们的物理世界是否完整呢？
 
 显然并不完整，因为我们此时并没有摩擦力、弹力这些力。当然Unity也考虑到了这一点，于是便有了物理材质这个东西。
-![img_5.png](img_5.png)
+<img src='../../../../assets/xingsi/game/meeting/PhysicalSystem/img_PS_3.png' loading='lazy'>
 点击之后，便会生成一个物理材质资源
-![img_6.png](img_6.png)
+<img src='../../../../assets/xingsi/game/meeting/PhysicalSystem/img_PS_4.png' loading='lazy'>
 
 参数：
 - Dynamic Friction 动摩擦系数。物体之间正在滑动时起作用，通常为0-1。0类似冰面效果，1时滑动会很快停止。
@@ -194,11 +193,9 @@ CapsuleCollider、SphereCollider与BoxCollider不同的就是调整大小的参�
 
 这几种物理对象的碰撞关系如下图
 
-![img_7.png](img_7.png)
-
+<img src='../../../../assets/xingsi/game/meeting/PhysicalSystem/img_PS_5.png' loading='lazy'>
 触发关系如下图
-![img_8.png](img_8.png)
-
+<img src='../../../../assets/xingsi/game/meeting/PhysicalSystem/img_PS_6.png' loading='lazy'>
 ### Static与Kinematic辨析
 这里的Static与Kinematic看起来似乎差不多，都是不受力的影响，都可以与动态物体发生碰撞。那么它们有什么不同呢？
 
