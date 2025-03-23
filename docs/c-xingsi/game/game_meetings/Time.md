@@ -29,6 +29,7 @@ Time.deltaTime是当前帧与上一帧两帧之间的间隔时间，由于场景
 
 我们考虑下图两种情况
 
+
 <img src='../../../../assets/xingsi/game/meeting/Time/image_3.png' loading='lazy'>
 
 假设一个3fps(上轴)，另一个为4fps(下轴)，那么就有其中dn为上轴的deltaTime，tn为下轴的deltaTime。
