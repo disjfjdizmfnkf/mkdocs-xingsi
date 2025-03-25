@@ -9,7 +9,7 @@
 想要理解什么是TIme.deltaTime，就要先理解为什么要用它,
 如果有以下代码
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_1.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_1.png' loading='lazy'>
 
 我们并没有给speed*Time.deltaTime,会有什么结果呢?
 
@@ -21,7 +21,7 @@ Time.deltaTime就是用来解决这个问题的
 
 Time.deltaTime是当前帧与上一帧两帧之间的间隔时间，由于场景变化等原因，每两帧之间的时间可能不同，deltaTime的值也会不同
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_2.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_2.png' loading='lazy'>
 
  >注意：Time.deltaTime只是获取帧与帧之间的时间，改变Time.deltaTime的值并不能改变帧之间的时间，帧之间的时间是由硬件等多种因素决定的
 
@@ -30,7 +30,7 @@ Time.deltaTime是当前帧与上一帧两帧之间的间隔时间，由于场景
 我们考虑下图两种情况
 
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_3.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_3.png' loading='lazy'>
 
 假设一个3fps(上轴)，另一个为4fps(下轴)，那么就有其中dn为上轴的deltaTime，tn为下轴的deltaTime。
 
@@ -42,13 +42,13 @@ Time.deltaTime是当前帧与上一帧两帧之间的间隔时间，由于场景
 
 所以当我们乘以deltaTime之后，无论一秒内执行了多少次Update，得到的结果都相同(暂时这样理解)
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_4.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_4.png' loading='lazy'>
 
 ## 二、Time.fixedDeltaTime
 
 接下来是Time.fixedDeltaTime,该值可以在Editor->Project Setting->Time->Fixed Timestep设置
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_5.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_5.png' loading='lazy'>
 
 ### 为什么要用
 
@@ -66,7 +66,7 @@ maxinumDeltaTime的作用是限制了Time.deltaTime的最大值。也就是说�
 
 所以为了限制Time.deltaTime的值，就有了maxinumDeltaTime,一般该值为0.3333，即一旦Time.deltaTime超过0.3333那么就会等于0.3333.
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_6.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_6.png' loading='lazy'>
 
 
 >再次声明：改变Time.deltaTime并不会改变两帧之间的实际时间，假设两帧之间本来为1秒，Time.deltaTime被改为为0.333秒，而实际上的时间为1秒
@@ -75,19 +75,19 @@ maxinumDeltaTime的作用是限制了Time.deltaTime的最大值。也就是说�
 
 ### 总览
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_7.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_7.png' loading='lazy'>
 
 上图就为Unity的时间逻辑，我们将其拆分为上下两部分
 
 ### 上半部分
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_8.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_8.png' loading='lazy'>
 
 上半部分主要是如何计算Time.time，对deltaTime使用maxinumDeltaTime进行限制
 
 ### 下半部分
 
-<img src='../../../../assets/xingsi/game/meeting/Time/image_9.png' loading='lazy'>
+<img src='../../../../assets/xingsi/game/meeting/Time/img_9.png' loading='lazy'>
 
 下半部分的重点在于中间的循环，即Time.fixedTime对Time.time的追赶。
 
