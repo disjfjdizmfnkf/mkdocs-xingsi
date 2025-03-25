@@ -1977,28 +1977,28 @@
 <h3 id="_2">为什么要用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>想要理解什么是TIme.deltaTime，就要先理解为什么要用它,
 如果有以下代码</p>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_1.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_1.png' loading='lazy'></a></p>
 <p>我们并没有给speed*Time.deltaTime,会有什么结果呢?</p>
 <p>由于<strong>Unity调用Update是根据帧率调用的</strong>，也就是说，如果一个可以运行120fps游戏的电脑，1秒可以执行120次Update，而一个可以60fps运行游戏的电脑，1秒钟只能执行60次Update，结果就是帧率越高跑的越快，帧率越低跑的越慢，这并不是我们期望的，因为这不公平</p>
 <h3 id="_3">是什么<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>Time.deltaTime就是用来解决这个问题的</p>
 <p>Time.deltaTime是当前帧与上一帧两帧之间的间隔时间，由于场景变化等原因，每两帧之间的时间可能不同，deltaTime的值也会不同</p>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_2.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_2.png' loading='lazy'></a></p>
 <blockquote>
 <p>注意：Time.deltaTime只是获取帧与帧之间的时间，改变Time.deltaTime的值并不能改变帧之间的时间，帧之间的时间是由硬件等多种因素决定的</p>
 </blockquote>
 <h3 id="_4">如何起作用<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>我们考虑下图两种情况</p>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_3.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_3.png' loading='lazy'></a></p>
 <p>假设一个3fps(上轴)，另一个为4fps(下轴)，那么就有其中dn为上轴的deltaTime，tn为下轴的deltaTime。</p>
 <p>所以有d1+d2+d3=t1+t2+t3+t4=1秒，此时两边同时乘以speed，</p>
 <p>就变为了(d1+d2+d3)speed=(t1+t2+t3+t4)speed</p>
 <p>也就是说在相同的时间下，无论帧率多少，使用一个speed乘以deltaTime得到的结果相同</p>
 <p>所以当我们乘以deltaTime之后，无论一秒内执行了多少次Update，得到的结果都相同(暂时这样理解)</p>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_4.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_4.png' loading='lazy'></a></p>
 <h2 id="timefixeddeltatime">二、Time.fixedDeltaTime<a class="headerlink" href="#timefixeddeltatime" title="Permanent link">&para;</a></h2>
 <p>接下来是Time.fixedDeltaTime,该值可以在Editor-&gt;Project Setting-&gt;Time-&gt;Fixed Timestep设置</p>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_5.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_5.png' loading='lazy'></a></p>
 <h3 id="_5">为什么要用<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>我们知道Update的更新是根据帧率进行调用的，但有时难免会出现帧率很低的情况，而物理模拟的更新又不能有太大的波动（例如：如果物理更新也是随帧率的话，会导致物理模拟的精确度随帧率波动而波动），所以物理模拟需要不随帧率影响的按照固定步长进行更新，因此有了Time.fixedDeltaTime和FixedUpdate</p>
 <h2 id="timetimetimefixedtime">三、Time.time与Time.fixedTime<a class="headerlink" href="#timetimetimefixedtime" title="Permanent link">&para;</a></h2>
@@ -2007,19 +2007,19 @@
 <p>这个API可能几乎不会在脚本用到（我是没用过）。但它却是Unity时间逻辑的重要组成部分。</p>
 <p>maxinumDeltaTime的作用是限制了Time.deltaTime的最大值。也就是说，如果某个时刻帧率很低（即两帧之间的间隔很长），Time.deltaTime的值相应的也会变得很大，其造成的结果如果用移动举例，就是人物会“闪现”移动。因为我们的逻辑一般为speed*Time.deltaTime来表示移动距离，这就有可能导致穿墙问题的发生。</p>
 <p>所以为了限制Time.deltaTime的值，就有了maxinumDeltaTime,一般该值为0.3333，即一旦Time.deltaTime超过0.3333那么就会等于0.3333.</p>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_6.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_6.png' loading='lazy'></a></p>
 <blockquote>
 <p>再次声明：改变Time.deltaTime并不会改变两帧之间的实际时间，假设两帧之间本来为1秒，Time.deltaTime被改为为0.333秒，而实际上的时间为1秒</p>
 </blockquote>
 <h2 id="unity">五、Unity的时间逻辑<a class="headerlink" href="#unity" title="Permanent link">&para;</a></h2>
 <h3 id="_6">总览<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_7.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_7.png' loading='lazy'></a></p>
 <p>上图就为Unity的时间逻辑，我们将其拆分为上下两部分</p>
 <h3 id="_7">上半部分<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_8.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_8.png' loading='lazy'></a></p>
 <p>上半部分主要是如何计算Time.time，对deltaTime使用maxinumDeltaTime进行限制</p>
 <h3 id="_8">下半部分<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/image_9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/image_9.png' loading='lazy'></a></p>
+<p><a class="glightbox" href="../../../../assets/xingsi/game/meeting/Time/img_9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src='../../../../assets/xingsi/game/meeting/Time/img_9.png' loading='lazy'></a></p>
 <p>下半部分的重点在于中间的循环，即Time.fixedTime对Time.time的追赶。</p>
 <p>由上图我们就可以知道为什么有时会说执行一次Update()时可能会执行多次FixedUpdate()</p>
 <p>原因就是deltaTime大于fixedDeltaTime,即帧率很低的时候，可能增加多次fixedDeltaTime,执行多次FixedUpdate(),才能走出循环执行一次Update()</p>
@@ -2093,7 +2093,7 @@
     
     <!-- 显示更新日期 -->
     
-      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2025年3月23日 13:36:14"><span class="timeago" datetime="2025-03-23T13:36:14+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年3月23日 13:36:14">2025-03-23</span>
+      最后更新: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2025年3月25日 14:19:19"><span class="timeago" datetime="2025-03-25T14:19:19+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年3月25日 14:19:19">2025-03-25</span>
     
 
     <!-- 显示创建日期 -->
